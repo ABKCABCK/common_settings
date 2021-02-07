@@ -1,0 +1,23 @@
+[user]
+	name = ck
+	email = kcabck55555@protonmail.com
+[credential]
+	helper = osxkeychain
+[core]
+	editor = code
+	excludesfile = /Users/kobechao/.gitignore_global
+[alias]
+	a = add
+	s = status
+	st = stash
+	b = branch
+	ch = checkout
+	cm = commit -m
+	l = log --oneline --graph
+	lg = log --graph --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
